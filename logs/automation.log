@@ -1,0 +1,6 @@
+2018-03-10 11:13:53 [main] INFO  c.T.F.T.ListenersMethods - OpenURL test case started
+2018-03-10 11:14:11 [main] INFO  c.T.F.T.ListenersMethods - Woohoo !!! Testcase OpenURL passed 
+2018-03-10 11:14:11 [main] INFO  c.T.F.T.BaseFunctions - Driver closed
+2018-03-10 11:15:11 [main] INFO  c.T.F.T.ListenersMethods - OpenURL test case started
+2018-03-10 11:15:25 [main] INFO  c.T.F.T.ListenersMethods - Woohoo !!! Testcase OpenURL passed 
+2018-03-10 11:15:26 [main] INFO  c.T.F.T.BaseFunctions - Driver closed

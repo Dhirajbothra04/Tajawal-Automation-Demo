@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" >
+
+<listeners>
+	    <listener class-name="com.Tajawal.Flights.Tajawal_Flights_Automation_Demo.ListenersMethods" />
+	</listeners>
+  
+  <test name="Login Test">
+    <classes>
+      <class name="com.Tajawal.Flights.Tajawal_Flights_Automation_Demo.HomeScreenTest"/>
+    </classes>
+  </test> 
+</suite>
