@@ -1,6 +1,90 @@
-2018-03-10 11:13:53 [main] INFO  c.T.F.T.ListenersMethods - OpenURL test case started
-2018-03-10 11:14:11 [main] INFO  c.T.F.T.ListenersMethods - Woohoo !!! Testcase OpenURL passed 
-2018-03-10 11:14:11 [main] INFO  c.T.F.T.BaseFunctions - Driver closed
-2018-03-10 11:15:11 [main] INFO  c.T.F.T.ListenersMethods - OpenURL test case started
-2018-03-10 11:15:25 [main] INFO  c.T.F.T.ListenersMethods - Woohoo !!! Testcase OpenURL passed 
-2018-03-10 11:15:26 [main] INFO  c.T.F.T.BaseFunctions - Driver closed
+2018-03-16 00:58:37 [main] INFO  c.T.F.T.ListenersMethods -
+				Suite Automation Assignment Demo Suite stating
+2018-03-16 00:58:53 [main] INFO  c.T.F.T.HomeScreen -
+				Title of website is tajawal | Book cheap flights, airline tickets and hotels online
+2018-03-16 00:58:53 [main] INFO  c.T.F.T.HomeScreen -
+				Pop-up not displayed
+2018-03-16 00:59:04 [main] INFO  c.T.F.T.ListenersMethods -
+				verifySearchParameters test case started
+2018-03-16 00:59:04 [main] ERROR c.T.F.T.ListenersMethods -
+				The name of the testcase Skipped is :verifySearchParameters
+2018-03-16 00:59:04 [main] ERROR c.T.F.T.ListenersMethods -
+				The name of the testcase Skipped is :FilterFlightCarrier
+2018-03-16 00:59:04 [main] ERROR c.T.F.T.ListenersMethods -
+				The name of the testcase Skipped is :selectFirstFlightFromListing
+2018-03-16 00:59:04 [main] ERROR c.T.F.T.ListenersMethods -
+				The name of the testcase Skipped is :entercustomerDetails
+2018-03-16 00:59:04 [main] ERROR c.T.F.T.ListenersMethods -
+				The name of the testcase Skipped is :enterContactDetails
+2018-03-16 00:59:04 [main] ERROR c.T.F.T.ListenersMethods -
+				The name of the testcase Skipped is :ContinueToPayment
+2018-03-16 00:59:12 [main] INFO  c.T.F.T.HomeScreen -
+				Title of website is tajawal | Book cheap flights, airline tickets and hotels online
+2018-03-16 00:59:21 [main] INFO  c.T.F.T.HomeScreen -
+				Pop-up not displayed
+2018-03-16 00:59:21 [main] INFO  c.T.F.T.HomeScreen -
+				Pop-up not displayed
+2018-03-16 00:59:21 [main] INFO  c.T.F.T.HomeScreen -
+				Pop-up not displayed
+2018-03-16 00:59:45 [main] ERROR c.T.F.T.HomeScreen -
+				Search Suppery box did  not display for more than 15 secs
+2018-03-16 00:59:45 [main] INFO  c.T.F.T.ListenersMethods -
+				verifySearchParameters test case started
+2018-03-16 00:59:52 [main] INFO  c.T.F.T.ListenersMethods -
+				Woohoo !!! Testcase verifySearchParameters passed 
+2018-03-16 00:59:52 [main] INFO  c.T.F.T.ListenersMethods -
+				sortLowTohigh test case started
+2018-03-16 01:00:00 [main] INFO  c.T.F.T.ListenersMethods -
+				Woohoo !!! Testcase sortLowTohigh passed 
+2018-03-16 01:00:32 [main] INFO  c.T.F.T.ListenersMethods -
+				Suite Automation Assignment Demo Suite stating
+2018-03-16 01:00:48 [main] INFO  c.T.F.T.HomeScreen -
+				Title of website is tajawal | Book cheap flights, airline tickets and hotels online
+2018-03-16 01:00:48 [main] INFO  c.T.F.T.HomeScreen -
+				Pop-up not displayed
+2018-03-16 01:01:14 [main] ERROR c.T.F.T.HomeScreen -
+				Search Suppery box did  not display for more than 15 secs
+2018-03-16 01:01:14 [main] INFO  c.T.F.T.ListenersMethods -
+				verifySearchParameters test case started
+2018-03-16 01:01:17 [main] INFO  c.T.F.T.ListenersMethods -
+				Woohoo !!! Testcase verifySearchParameters passed 
+2018-03-16 01:01:17 [main] INFO  c.T.F.T.ListenersMethods -
+				FilterFlightCarrier test case started
+2018-03-16 01:01:20 [main] INFO  c.T.F.T.ListenersMethods -
+				Woohoo !!! Testcase FilterFlightCarrier passed 
+2018-03-16 01:01:20 [main] INFO  c.T.F.T.ListenersMethods -
+				selectFirstFlightFromListing test case started
+2018-03-16 01:01:29 [main] INFO  c.T.F.T.ListenersMethods -
+				Woohoo !!! Testcase selectFirstFlightFromListing passed 
+2018-03-16 01:01:29 [main] INFO  c.T.F.T.ListenersMethods -
+				entercustomerDetails test case started
+2018-03-16 01:01:29 [main] INFO  c.T.F.T.ReviewAndDetailsScreen -
+				We are on Traveller Details Screen
+2018-03-16 01:01:36 [main] INFO  c.T.F.T.ListenersMethods -
+				Woohoo !!! Testcase entercustomerDetails passed 
+2018-03-16 01:01:36 [main] INFO  c.T.F.T.ListenersMethods -
+				enterContactDetails test case started
+2018-03-16 01:01:36 [main] INFO  c.T.F.T.ListenersMethods -
+				Woohoo !!! Testcase enterContactDetails passed 
+2018-03-16 01:01:36 [main] INFO  c.T.F.T.ListenersMethods -
+				ContinueToPayment test case started
+2018-03-16 01:01:37 [main] INFO  c.T.F.T.ListenersMethods -
+				Woohoo !!! Testcase ContinueToPayment passed 
+2018-03-16 01:01:44 [main] INFO  c.T.F.T.HomeScreen -
+				Title of website is tajawal | Book cheap flights, airline tickets and hotels online
+2018-03-16 01:01:52 [main] INFO  c.T.F.T.HomeScreen -
+				Pop-up not displayed
+2018-03-16 01:01:52 [main] INFO  c.T.F.T.HomeScreen -
+				Pop-up not displayed
+2018-03-16 01:01:52 [main] INFO  c.T.F.T.HomeScreen -
+				Pop-up not displayed
+2018-03-16 01:02:04 [main] INFO  c.T.F.T.HomeScreen -
+				One way trip button not displayed
+2018-03-16 01:02:11 [main] INFO  c.T.F.T.ListenersMethods -
+				verifySearchParameters test case started
+2018-03-16 01:02:15 [main] INFO  c.T.F.T.ListenersMethods -
+				Woohoo !!! Testcase verifySearchParameters passed 
+2018-03-16 01:02:15 [main] INFO  c.T.F.T.ListenersMethods -
+				sortLowTohigh test case started
+2018-03-16 01:02:23 [main] INFO  c.T.F.T.ListenersMethods -
+				Woohoo !!! Testcase sortLowTohigh passed 

@@ -1,36 +1,39 @@
 package com.Tajawal.Flights.Tajawal_Flights_Automation_Demo;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVPrinter;
 
 public abstract class BaseFunctions {
-	private final static Logger LOGGER = LoggerFactory.getLogger(BaseFunctions.class); // For
-																						// logging.
-																						// Enter
-																						// current
-																						// class
-																						// name
+	private final static Logger LOGGER = LoggerFactory.getLogger(BaseFunctions.class);
+
 	public static WebDriver driver;
 	public Properties prop = new Properties();
-	Calendar calendar = Calendar.getInstance();
-	SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
+	static Calendar calendar = Calendar.getInstance();
+	static SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
 	SimpleDateFormat sdf = new SimpleDateFormat("MMMM dd, yyyy");
 	WebDriverWait wait;
 	JavascriptExecutor js;
@@ -38,6 +41,7 @@ public abstract class BaseFunctions {
 	public BaseFunctions() {
 		try {
 			prop.load(new FileInputStream("../Tajawal_Flights_Automation_Demo/resorses/config.properties"));
+
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -48,12 +52,15 @@ public abstract class BaseFunctions {
 
 		String DriverPath = prop.getProperty("firfoxDriverPath");
 
+		// System.setProperty("webdriver.chrome.driver",
+		// "../Tajawal_Flights_Automation_Demo/chromedriver");
 		System.setProperty("webdriver.gecko.driver", DriverPath);
 		if (driver == null) {
 			driver = new FirefoxDriver();
+			// driver = new ChromeDriver();
 		}
 
-		wait = new WebDriverWait(driver, 10);
+		wait = new WebDriverWait(driver, 8);
 		js = ((JavascriptExecutor) driver);
 
 	}
@@ -63,7 +70,7 @@ public abstract class BaseFunctions {
 	}
 
 	public void closeDriver() {
-		driver.quit();
+		driver.close();
 		LOGGER.info("Driver closed");
 	}
 
@@ -97,16 +104,24 @@ public abstract class BaseFunctions {
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 
+	public void waituntillAnyOfTwoElementVisible(WebElement element1, WebElement element2) {
+		wait.until(ExpectedConditions.or(ExpectedConditions.visibilityOf(element1),
+				ExpectedConditions.visibilityOf(element2)));
+	}
+
 	public void waitUntillElementInvisible(WebElement element) {
 		wait.until(ExpectedConditions.invisibilityOf(element));
+		wait.until(ExpectedConditions.or());
 	}
 
 	public void waitUntillElementClickable(WebElement element) {
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 
 	}
-	
-	
-	
-	
+
+	public void scrollWindow(int y) {
+		js.executeScript("window.scrollBy(0," + y + ")");
+
+	}
+
 }
